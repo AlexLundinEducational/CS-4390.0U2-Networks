@@ -1,0 +1,2 @@
+VMware Tools Fresh Install
+https://kb.vmware.com/s/article/1022525

@@ -1,0 +1,38 @@
+C		- standard programming language when unix and linux operating systems became popular
+unix 	- operating system
+linux	-  unix like operating system
+
+Ctrl + Alt + T
+	launch linux command terminal
+
+pwd
+	print working directory
+	
+cd .. 
+	move to parents directory
+	
+ls
+	lists files in current directory, accepts flags as well
+	
+ls -l
+	lists long version of files
+	
+ls -a
+	lists all files, including hidden files
+	
+ls -la
+	list long version of all files	
+	example of combined flag
+	
+screen -L
+	start screen log in current directory
+
+screen -list
+	list all active screens
+	
+screen -r 23520.pts-6.porkypig
+	recconect to specific screen
+	
+with screen attached
+	ctrl + a, K, y
+	kills screen

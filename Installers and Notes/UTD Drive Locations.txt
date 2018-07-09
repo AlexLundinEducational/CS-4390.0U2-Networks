@@ -1,0 +1,10 @@
+UTD Drive Locations
+
+H:
+\\mars.utdallas.edu
+K:
+\\campus
+L:
+\\campus
+P:
+\\campus\utd

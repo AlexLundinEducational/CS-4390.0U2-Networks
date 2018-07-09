@@ -1,0 +1,4 @@
+UTD Paths
+cd "./Working-Homework-Folder/SE 3377.501 - CC++ in  UNIX/Programs/HW"
+
+cd "./Working-Homework-Folder/SE 3377.501 - CC++ in  UNIX/Programs/HW/Program4/scanner"

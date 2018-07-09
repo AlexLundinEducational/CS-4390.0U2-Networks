@@ -1,0 +1,9 @@
+##Alex Lundin
+##AML140830@utdallas.edu
+##SE 3377.501 - CC++ in  UNIX
+awk 
+## sum up first and fourth columns of text file sent in from calling command
+{column1Total += $1}
+{column4Total += $4} 
+## print the result with a space in between
+END{print column1Total " " column4Total}

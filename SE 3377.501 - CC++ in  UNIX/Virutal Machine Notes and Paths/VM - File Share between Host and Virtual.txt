@@ -1,0 +1,2 @@
+File Share between Host and Virtual
+http://theholmesoffice.com/how-to-share-folders-between-windows-and-ubuntu-using-vmware-player/

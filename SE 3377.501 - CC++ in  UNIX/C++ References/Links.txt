@@ -1,0 +1,2 @@
+C++ tutorial http://www.learncpp.com/
+C++ reference: http://cppreference.com

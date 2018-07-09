@@ -1,0 +1,8 @@
+Running C++ program on Ubuntu
+https://askubuntu.com/questions/61408/what-is-a-command-to-compile-and-run-c-programs
+
+running foo.c
+set current directory
+
+g++ foo.c
+./a.out

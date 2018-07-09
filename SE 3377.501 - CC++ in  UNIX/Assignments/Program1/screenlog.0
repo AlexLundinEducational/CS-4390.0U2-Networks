@@ -1,0 +1,206 @@
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs file1.cc
+The program 'emacs' can be found in the following packages:
+ * emacs24
+ * emacs24-nox
+ * e3
+ * emacs23
+ * emacs23-lucid
+ * emacs23-nox
+ * emacs24-lucid
+ * jove
+Try: sudo apt-get install <selected package>
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ sudo apt-get install emacs2 4
+[sudo] password for alex: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  libntdb1 python-ntdb
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  emacs24-bin-common emacs24-common emacs24-common-non-dfsg emacsen-common
+  imagemagick-common libfftw3-double3 libgif4 liblqr-1-0 libm17n-0
+  libmagickcore5 libmagickwand5 libotf0 m17n-contrib m17n-db
+Suggested packages:
+  emacs24-el libfftw3-bin libfftw3-dev m17n-docs libmagickcore5-extra gawk
+The following NEW packages will be installed:
+  emacs24 emacs24-bin-common emacs24-common emacs24-common-non-dfsg
+  emacsen-common imagemagick-common libfftw3-double3 libgif4 liblqr-1-0
+  libm17n-0 libmagickcore5 libmagickwand5 libotf0 m17n-contrib m17n-db
+0 upgraded, 15 newly installed, 0 to remove and 22 not upgraded.
+Need to get 26.6 MB of archives.
+After this operation, 106 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+0% [Working]            0% [Connecting to us.archive.ubuntu.com]0% [Connecting to us.archive.ubuntu.com]0% [Connecting to us.archive.ubuntu.com]0% [Connecting to us.archive.ubuntu.com]                                        Get:1 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main imagemagick-common all 8:6.7.7.10-6ubuntu3.9 [37.5 kB]
+0% [1 imagemagick-common 0 B/37.5 kB 0%]                                        0% [Working]            Get:2 http://us.archive.ubuntu.com/ubuntu/ trusty/main libfftw3-double3 amd64 3.3.3-7ubuntu3 [702 kB]
+            0% [2 libfftw3-double3 0 B/702 kB 0%]                                     3% [Working]            Get:3 http://us.archive.ubuntu.com/ubuntu/ trusty/main libgif4 amd64 4.1.6-11 [28.6 kB]
+            3% [3 libgif4 0 B/28.6 kB 0%]                             3% [Working]            Get:4 http://us.archive.ubuntu.com/ubuntu/ trusty/main liblqr-1-0 amd64 0.4.1-2ubuntu1 [23.4 kB]
+            3% [4 liblqr-1-0 0 B/23.4 kB 0%]                                3% [Working]            Get:5 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libmagickcore5 amd64 8:6.7.7.10-6ubuntu3.9 [1,476 kB]
+            3% [5 libmagickcore5 0 B/1,476 kB 0%]                                     9% [Working]            Get:6 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main libmagickwand5 amd64 8:6.7.7.10-6ubuntu3.9 [266 kB]
+            9% [6 libmagickwand5 0 B/266 kB 0%]                                   10% [Working]             Get:7 http://us.archive.ubuntu.com/ubuntu/ trusty/main libotf0 amd64 0.9.13-1ubuntu1 [44.2 kB]
+             10% [7 libotf0 0 B/44.2 kB 0%]                              10% [Working]             Get:8 http://us.archive.ubuntu.com/ubuntu/ trusty/main emacsen-common all 2.0.7 [17.1 kB]
+             10% [8 emacsen-common 0 B/17.1 kB 0%]                                     10% [Working]             Get:9 http://us.archive.ubuntu.com/ubuntu/ trusty/main emacs24-common-non-dfsg all 24.3+1-1 [4,421 kB]
+             10% [9 emacs24-common-non-dfsg 0 B/4,421 kB 0%]                                               16% [9 emacs24-common-non-dfsg 1,607 kB/4,421 kB 36%]24% [9 emacs24-common-non-dfsg 3,825 kB/4,421 kB 87%]                                                     26% [Working]             Get:10 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main emacs24-common all 24.3+1-2ubuntu1.1 [13.7 MB]
+             26% [10 emacs24-common 0 B/13.7 MB 0%]                                      36% [10 emacs24-common 2,619 kB/13.7 MB 19%]45% [10 emacs24-common 5,029 kB/13.7 MB 37%]                                            57% [10 emacs24-common 8,106 kB/13.7 MB 59%]                      2,364 kB/s 4s64% [10 emacs24-common 10.1 MB/13.7 MB 74%]                       2,364 kB/s 4s76% [10 emacs24-common 13.2 MB/13.7 MB 96%]                       2,364 kB/s 2s78% [Working]                                                     2,364 kB/s 2s                                                                               Get:11 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main emacs24-bin-common amd64 24.3+1-2ubuntu1.1 [104 kB]
+78% [11 emacs24-bin-common 0 B/104 kB 0%]                         2,364 kB/s 2s78% [Working]                                                     2,364 kB/s 2s                                                                               Get:12 http://us.archive.ubuntu.com/ubuntu/ trusty/main m17n-db all 1.6.4-1 [1,807 kB]
+78% [12 m17n-db 0 B/1,807 kB 0%]                                  2,364 kB/s 2s85% [Working]                                                     2,364 kB/s 1s                                                                               Get:13 http://us.archive.ubuntu.com/ubuntu/ trusty/main m17n-contrib all 1.1.14-1 [517 kB]
+85% [13 m17n-contrib 0 B/517 kB 0%]                               2,364 kB/s 1s87% [Working]                                                     2,364 kB/s 1s                                                                               Get:14 http://us.archive.ubuntu.com/ubuntu/ trusty/main libm17n-0 amd64 1.6.4-2ubuntu1 [238 kB]
+87% [14 libm17n-0 0 B/238 kB 0%]                                  2,364 kB/s 1s88% [Working]                                                     2,364 kB/s 1s                                                                               Get:15 http://us.archive.ubuntu.com/ubuntu/ trusty-updates/main emacs24 amd64 24.3+1-2ubuntu1.1 [3,170 kB]
+88% [15 emacs24 0 B/3,170 kB 0%]                                  2,364 kB/s 1s95% [15 emacs24 1,804 kB/3,170 kB 57%]                            2,364 kB/s 0s100% [Working]                                                    2,364 kB/s 0s                                                                               Fetched 26.6 MB in 9s (2,888 kB/s)
+Selecting previously unselected package imagemagick-common.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 165904 files and directories currently installed.)
+Preparing to unpack .../imagemagick-common_8%3a6.7.7.10-6ubuntu3.9_all.deb ...
+Unpacking imagemagick-common (8:6.7.7.10-6ubuntu3.9) ...
+Selecting previously unselected package libfftw3-double3:amd64.
+Preparing to unpack .../libfftw3-double3_3.3.3-7ubuntu3_amd64.deb ...
+Unpacking libfftw3-double3:amd64 (3.3.3-7ubuntu3) ...
+Selecting previously unselected package libgif4:amd64.
+Preparing to unpack .../libgif4_4.1.6-11_amd64.deb ...
+Unpacking libgif4:amd64 (4.1.6-11) ...
+Selecting previously unselected package liblqr-1-0:amd64.
+Preparing to unpack .../liblqr-1-0_0.4.1-2ubuntu1_amd64.deb ...
+Unpacking liblqr-1-0:amd64 (0.4.1-2ubuntu1) ...
+Selecting previously unselected package libmagickcore5:amd64.
+Preparing to unpack .../libmagickcore5_8%3a6.7.7.10-6ubuntu3.9_amd64.deb ...
+Unpacking libmagickcore5:amd64 (8:6.7.7.10-6ubuntu3.9) ...
+Selecting previously unselected package libmagickwand5:amd64.
+Preparing to unpack .../libmagickwand5_8%3a6.7.7.10-6ubuntu3.9_amd64.deb ...
+Unpacking libmagickwand5:amd64 (8:6.7.7.10-6ubuntu3.9) ...
+Selecting previously unselected package libotf0:amd64.
+Preparing to unpack .../libotf0_0.9.13-1ubuntu1_amd64.deb ...
+Unpacking libotf0:amd64 (0.9.13-1ubuntu1) ...
+Selecting previously unselected package emacsen-common.
+Preparing to unpack .../emacsen-common_2.0.7_all.deb ...
+Unpacking emacsen-common (2.0.7) ...
+Selecting previously unselected package emacs24-common-non-dfsg.
+Preparing to unpack .../emacs24-common-non-dfsg_24.3+1-1_all.deb ...
+Unpacking emacs24-common-non-dfsg (24.3+1-1) ...
+Selecting previously unselected package emacs24-common.
+Preparing to unpack .../emacs24-common_24.3+1-2ubuntu1.1_all.deb ...
+Unpacking emacs24-common (24.3+1-2ubuntu1.1) ...
+Selecting previously unselected package emacs24-bin-common.
+Preparing to unpack .../emacs24-bin-common_24.3+1-2ubuntu1.1_amd64.deb ...
+Unpacking emacs24-bin-common (24.3+1-2ubuntu1.1) ...
+Selecting previously unselected package m17n-db.
+Preparing to unpack .../m17n-db_1.6.4-1_all.deb ...
+Unpacking m17n-db (1.6.4-1) ...
+Selecting previously unselected package m17n-contrib.
+Preparing to unpack .../m17n-contrib_1.1.14-1_all.deb ...
+Unpacking m17n-contrib (1.1.14-1) ...
+Selecting previously unselected package libm17n-0.
+Preparing to unpack .../libm17n-0_1.6.4-2ubuntu1_amd64.deb ...
+Unpacking libm17n-0 (1.6.4-2ubuntu1) ...
+Selecting previously unselected package emacs24.
+Preparing to unpack .../emacs24_24.3+1-2ubuntu1.1_amd64.deb ...
+Unpacking emacs24 (24.3+1-2ubuntu1.1) ...
+Processing triggers for install-info (5.2.0.dfsg.1-2) ...
+Processing triggers for desktop-file-utils (0.22-1ubuntu1.1) ...
+Processing triggers for gnome-menus (3.10.1-0ubuntu2) ...
+Processing triggers for bamfdaemon (0.5.1+14.04.20140409-0ubuntu1) ...
+Rebuilding /usr/share/applications/bamf-2.index...
+Processing triggers for mime-support (3.54ubuntu1.1) ...
+Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+Processing triggers for hicolor-icon-theme (0.13-1) ...
+Setting up imagemagick-common (8:6.7.7.10-6ubuntu3.9) ...
+Setting up libfftw3-double3:amd64 (3.3.3-7ubuntu3) ...
+Setting up libgif4:amd64 (4.1.6-11) ...
+Setting up liblqr-1-0:amd64 (0.4.1-2ubuntu1) ...
+Setting up libmagickcore5:amd64 (8:6.7.7.10-6ubuntu3.9) ...
+Setting up libmagickwand5:amd64 (8:6.7.7.10-6ubuntu3.9) ...
+Setting up libotf0:amd64 (0.9.13-1ubuntu1) ...
+Setting up emacsen-common (2.0.7) ...
+Setting up emacs24-common-non-dfsg (24.3+1-1) ...
+Setting up emacs24-common (24.3+1-2ubuntu1.1) ...
+Setting up emacs24-bin-common (24.3+1-2ubuntu1.1) ...
+update-alternatives: using /usr/bin/ctags.emacs24 to provide /usr/bin/ctags (ctags) in auto mode
+update-alternatives: using /usr/bin/ebrowse.emacs24 to provide /usr/bin/ebrowse (ebrowse) in auto mode
+update-alternatives: using /usr/bin/emacsclient.emacs24 to provide /usr/bin/emacsclient (emacsclient) in auto mode
+update-alternatives: using /usr/bin/etags.emacs24 to provide /usr/bin/etags (etags) in auto mode
+update-alternatives: using /usr/bin/grep-changelog.emacs24 to provide /usr/bin/grep-changelog (grep-changelog) in auto mode
+Setting up m17n-db (1.6.4-1) ...
+Setting up m17n-contrib (1.1.14-1) ...
+Setting up libm17n-0 (1.6.4-2ubuntu1) ...
+Setting up emacs24 (24.3+1-2ubuntu1.1) ...
+update-alternatives: using /usr/bin/emacs24-x to provide /usr/bin/emacs (emacs) in auto mode
+Install emacsen-common for emacs24
+emacsen-common: Handling install of emacsen flavor emacs24
+Wrote /etc/emacs24/site-start.d/00debian-vars.elc
+Wrote /usr/share/emacs24/site-lisp/debian-startup.elc
+Processing triggers for libc-bin (2.19-0ubuntu6.14) ...
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs
+
+(emacs:4574): Gtk-CRITICAL **: gtk_device_grab_add: assertion 'GDK_IS_DEVICE (device)' failed
+
+(emacs:4574): Gdk-CRITICAL **: gdk_device_grab: assertion 'GDK_IS_DEVICE (device)' failed
+^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[^[^[                                                                              pwd
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ pwd
+/mnt/hgfs/Programs/HW/Program 1/Program
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ ./compile.sh
+Setting TEMPDIR environment variable to /scratch
+Compiling file1.cc
+file1.cc:8:20: error: expected ‘;’ before ‘:’ token
+ using namespace std:
+                    ^
+file1.cc:8:20: error: expected unqualified-id before ‘:’ token
+file1.cc: In function ‘int main(int, char**)’:
+file1.cc:23:9: error: ‘proc1’ was not declared in this scope
+   proc1();
+         ^
+./compile.sh: line 8: eacho: command not found
+Linking files to create executable hw1
+g++: error: file1.o: No such file or directory
+g++: error: fil2.o: No such file or directory
+g++: fatal error: no input files
+compilation terminated.
+Done
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ ./compiu[Ke[Kle.sh
+Setting TEMPDIR environment variable to /scratch
+Compiling file1.cc
+./compile.sh: line 8: eacho: command not found
+Linking files to create executable hw1
+g++: error: fil2.o: No such file or directory
+Done
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ ./compui[K[Kile.sh
+Setting TEMPDIR environment variable to /scratch
+Compiling file1.cc
+Compiling fil2.cc
+Linking files to create executable hw1
+g++: error: fil2.o: No such file or directory
+Done
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ ./compile.cc
+bash: ./compile.cc: No such file or directory
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ ./compu[Kile.sh
+Setting TEMPDIR environment variable to /scratch
+Compiling file1.cc
+Compiling file2.cc
+Linking files to create executable hw1
+Done
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ ./run./[Ksh
+rm: cannot remove ‘stdout.log’: No such file or directory
+rm: cannot remove ‘stderr.log’: No such file or directory
+Running hw1 with 0 arguments
+        stdout appended to stdout.log
+        stderr appended to stderr.log
+Running hw1 with 1 arguments
+        stdout appended to stdout.log
+        stderr appended to stderr.log
+Running hw1 with 5 arguments
+        stdout appended to stdout.log
+        stderr appended to stderr.log
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ ./run.sh
+Running hw1 with 0 arguments
+        stdout appended to stdout.log
+        stderr appended to stderr.log
+Running hw1 with 1 arguments
+        stdout appended to stdout.log
+        stderr appended to stderr.log
+Running hw1 with 5 arguments
+        stdout appended to stdout.log
+        stderr appended to stderr.log
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ emacs
+alex@ubuntu:/mnt/hgfs/Programs/HW/Program 1/Program$ exit

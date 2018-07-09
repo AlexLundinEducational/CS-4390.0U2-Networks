@@ -1,0 +1,3 @@
+C++ #include paths
+
+http://blog.bfitz.us/?p=1793

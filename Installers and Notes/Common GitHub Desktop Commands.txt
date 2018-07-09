@@ -1,0 +1,44 @@
+// you will need to download Git for Windows, links in Software Installers
+
+// set current directory
+right click on folder
+Open Git Bash here option
+
+// adds all files, folder and subfolder in current git bash directory
+git add *
+
+
+// commit changes to local master
+git commit -m "<Message>"
+
+// push to url master
+git push -u origin master
+
+// show status of all files
+git status
+
+// remove any deletes folder and files from git
+git add -u 
+git commit -m "<removing deleted files from tracking>"
+git push origin master
+
+// show all UNTRACKED files in the stucture
+git clean -n
+
+// delete files (WARNING this actually deletes any files that are displayed as untracked by above command)
+git clean -files
+
+// commit all changes
+git commit -a
+
+// Websites
+#1
+https://stackoverflow.com/questions/8775850/how-do-i-add-files-and-folders-into-github-repos
+
+
+// gitignore (globally include all files)
+https://stackoverflow.com/questions/26678955/un-ignore-all-files-in-global-gitignore
+
+Unchecked
+https://stackoverflow.com/questions/12258399/how-to-create-folder-in-github-repository
+https://stackoverflow.com/questions/8961334/how-to-change-folder-with-git-bash

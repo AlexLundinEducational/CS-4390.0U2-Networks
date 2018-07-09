@@ -1,0 +1,7 @@
+VM Path
+cd /mnt/hgfs/Programs
+cd /mnt/hgfs/Programs/HW
+cd "/mnt/hgfs/Programs/HW/Program2/Program"
+cd "/mnt/hgfs/Programs/HW/Program4"
+
+cd "/mnt/hgfs/Programs/HW/Program5/aml140830-hw5-phase5"
