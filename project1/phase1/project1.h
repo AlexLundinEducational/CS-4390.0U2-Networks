@@ -1,8 +1,9 @@
 //Alex Lundin
 //AML140830@utdallas.edu
-//SE 3377.501 - CC++ in  UNIX
-#ifndef PROGRAM5_H
-#define  PROGRAM5_H
+//Project 1
+//CS-4390.0U2-Networks in  UNIX
+#ifndef PROGRAM1_H
+#define  PROGRAM1_H
 
 #include <sys/stat.h>
 #include <sys/file.h>
@@ -32,9 +33,11 @@
 #include <syslog.h>
 extern std::map <int, std::string> myMap;
 using namespace std;
-void parseCommandLine(int, char **);
 void processControl();
+void signalRegister();
+void fillMapWithConfigurationFileWrapper();
+void parseConfigFile();
 void printMapData();
 enum myEnums {CONFIGFILE,DFLAG, LOGFILE, NUMVERSIONS, VERBOSE, PASSWORD, WATCHDIR};
-#endif // PROGRAM5_H
+#endif // PROGRAM1_H
 

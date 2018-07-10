@@ -49,7 +49,8 @@ PROJECTNAME = project1
 EXECFILE = network
 
 ## actually define the names of the OBJS files
-OBJS = project1.o printMapData.o processControl.o signalHandling.o inotifyFunctions.o
+OBJS = parseConfigFile.o fillMapWithConfigurationFileWrapper.o project1.o printMapData.o processControl.o signalHandling.o inotifyFunctions.o
+## project1.o printMapData.o processControl.o signalHandling.o inotifyFunctions.o
 ## use wild cards to define what types of files SRCS are
 SRCS = $(wildcard *.cc)
 

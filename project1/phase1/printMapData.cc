@@ -1,10 +1,11 @@
 //Alex Lundin
 //AML140830@utdallas.edu
-//SE 3377.501 - CC++ in  UNIX
+//Project 1
+//CS-4390.0U2-Networks in  UNIX
 
 // Development Tool
 // Used to print map to screen
-#include "program5.h"
+#include "project1.h"
 using namespace std;
 
 void printMapData (){
