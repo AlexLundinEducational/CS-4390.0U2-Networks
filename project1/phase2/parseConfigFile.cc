@@ -8,7 +8,7 @@
 using namespace std;
 
 void readConfigFile ();
-void fillMapWithConfigFile (bool Verbose, std::string LogFile, std::string WatchDir);
+void fillMapWithConfigFile (bool Verbose, std::string LogFile, std::string WatchDir, bool daemon);
 void reReadConfigFile ();
 void reFilMap (bool Verbose, std::string LogFile);
 
@@ -49,6 +49,7 @@ void readConfigFile (){
 		std::string verboseString = "";
 		std::string LogFile = "";
 		std::string WatchDir = "";
+		std::string daemonString = "";
 				
 		// file reader
 		for( std::string line; getline( input, line ); )
@@ -64,9 +65,10 @@ void readConfigFile (){
 			printf(value.c_str());
 			
 			switch(i) {
-				case 1 : verboseString = value.c_str();
-				case 2 : LogFile = value.c_str();
-				case 3 : WatchDir = value.c_str();
+				case 0 : verboseString = value.c_str();
+				case 1 : LogFile = value.c_str();
+				case 2 : WatchDir = value.c_str();
+				case 3 : daemonString = value.c_str();
 			}
 
 			printf("\n");
@@ -82,10 +84,17 @@ void readConfigFile (){
 		else{
 			Verbose = false;				
 		}
-	
-		fillMapWithConfigFile (Verbose, LogFile, WatchDir);
 		
-
+		bool daemon = false;
+		
+		if (daemonString == "true"){
+			daemon = true;		  
+		}
+		else{
+			daemon = false;				
+		}	
+		
+		fillMapWithConfigFile (Verbose, LogFile, WatchDir, daemon);
 		
 
 		return;		
@@ -93,39 +102,38 @@ void readConfigFile (){
 
 
 
-// this method accepts the values parsed from the parser
+// this method accepts the values parsed from the reader above
 // then this method determines what to place in the map 
 // Verbose will be a boolean true or false
 // LogFile will be string name of a log file
-// Password will be string of a password
-// NumVersions will be integer representation of number of versions to keep
 // WatchDir will be string of directory to watch
-void fillMapWithConfigFile (bool Verbose, std::string LogFile, std::string WatchDir){
+void fillMapWithConfigFile (bool Verbose, std::string LogFile, std::string WatchDir, bool daemon){
 	
 	std::string TrueString = "true";
 	std::string FalseString = "false";
 	
 	// add the verbose flag to the map in the form of a boolean value
-	// alert user of the status of the daemon flag before storing the boolean representation
-		if ( Verbose )
-	{
-		myMap.insert(pair<int,string>(VERBOSE, TrueString ));		  
+	if ( Verbose ){
+	myMap.insert(pair<int,string>(VERBOSE, TrueString ));		  
 	}
-		else{
-		myMap.insert(pair<int,string>(VERBOSE, FalseString ));				
-			
-		}
+	else{
+	myMap.insert(pair<int,string>(VERBOSE, FalseString ));					
+	}
 		
 	// add the log file path to the map, as a string
 	myMap.insert(pair<int,string>(LOGFILE, LogFile));   
 
-
-
- 
   
 	// add the watch directory to the map, as a string
 	myMap.insert(pair<int,string>(WATCHDIR, WatchDir));	
- 
+	
+ 	// add the daemon flag to the map in the form of a boolean value
+	if ( daemon ){
+	myMap.insert(pair<int,string>(DFLAG, TrueString));		  
+	}
+	else{
+	myMap.insert(pair<int,string>(DFLAG, FalseString));					
+	}
 		
 }
 
@@ -136,11 +144,9 @@ void fillMapWithConfigFile (bool Verbose, std::string LogFile, std::string Watch
 
 void reReadConfigFile (){
 
-		
 		readConfigFile();
 		printf("\nReread config file complete.");
 
-		
 		return;		
 
 

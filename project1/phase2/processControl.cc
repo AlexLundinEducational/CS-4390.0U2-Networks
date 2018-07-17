@@ -36,9 +36,7 @@ void processControl(){
 	std::string configFilePath = myMap.find(CONFIGFILE)->second;
 	std::string daemonFlag = myMap.find(DFLAG)->second;
 	std::string logFilePath = myMap.find(LOGFILE)->second;
-	std::string numVersions = myMap.find(NUMVERSIONS)->second;
 	std::string verboseFlag = myMap.find(VERBOSE)->second;
-	std::string password = myMap.find(PASSWORD)->second;
 	std::string watchDirectoryPath = myMap.find(WATCHDIR)->second;
 	
 	// command to make directory and .versions subfolder
@@ -87,6 +85,7 @@ void daemonSpawner (std::string daemonFlag){
 				// this fork created a daemon
 				// close the write pipe on mainToDaemon
 				// close the read pipe on daemonToMain
+				printf("\nI'm the daemon...");
 				close(mainToDaemon_pipes[i][1]);
 				close(daemonToMain_pipes[i][0]);
 						
@@ -108,12 +107,14 @@ void daemonSpawner (std::string daemonFlag){
 
 			}else if (daemons[i] == -1){
 				// this fork returned an error
+				printf("\nPID error");
 			}else{
+				
 				// this fork returned the source process
 				// this is the process who spawns daemons
 				// close the read pipe on mainToDaemon
 				// close the write pipe on daemonToMain
-				
+				printf("\nClosing pipes...");
 				close(mainToDaemon_pipes[i][0]);
 				close(daemonToMain_pipes[i][1]);
 
@@ -143,8 +144,7 @@ void daemonSpawner (std::string daemonFlag){
 		// write to pid file
 		// write pid of this process
 		write_pid();		
-		
-		initiateWatchAndReadBlock();		
+				
 	}
 
 	
@@ -163,7 +163,6 @@ void daemonSpawner (std::string daemonFlag){
 void daemonProcess (int command_fd, int response_fd){
 	open_log();
 	printf("\nRunning as daemon...");
-	initiateWatchAndReadBlock();
 
 }
 

@@ -24,6 +24,6 @@ int main (int argc, char * argv[]){
 	fillMapWithConfigurationFileWrapper();
 	parseConfigFile();
 	printMapData();
-	//processControl();
+	processControl();
 	return(0);
 }

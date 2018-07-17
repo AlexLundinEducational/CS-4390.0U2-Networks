@@ -39,13 +39,5 @@ void fillMapWithConfigurationFileLocation(){
 	printf("\n");
 	printf(configFilePath.c_str());
 	
-	std::string TrueString = "true";
-	std::string FalseString = "false";	
-	
-	myMap.insert(pair<int,string>(DFLAG, FalseString ));
-	printf("\nRunning as regular process, daemon flag:");
-	printf("\n");
-	printf(FalseString.c_str());
-	
 	printf("\n");
 }

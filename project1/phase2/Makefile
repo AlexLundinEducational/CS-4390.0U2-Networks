@@ -93,3 +93,6 @@ backup:
 	@chmod 777 $(SUBMISSION)
 	@echo
 	@echo Done!
+
+mypids:
+	@ps -ef | grep aml140830
