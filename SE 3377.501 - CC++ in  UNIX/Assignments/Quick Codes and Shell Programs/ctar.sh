@@ -4,3 +4,6 @@
 #!/bin/bash
 #don't put a path on the directory-name
 tar -zxvf my.tar.gz sourcetar
+
+# untar
+tar -xvzf my.tar.gz
