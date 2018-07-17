@@ -17,9 +17,9 @@ echo Compiling completed...
 #cc reader.o writer.o -o readerWriter
 echo Done compiling
 echo start reader in background
-#./reader &
+./reader &
 echo start writer in background
-#./writer &
+./writer &
 echo
 echo these are all the processes I have running....
 ps -ef | grep aml140830
