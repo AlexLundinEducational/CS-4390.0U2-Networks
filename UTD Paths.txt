@@ -1,2 +1,4 @@
 UTD Paths
 cd "./GitHub/CS-4390.0U2-Networks/project1/phase1"
+
+cd "./GitHub/CS-4390.0U2-Networks/project1/ex"
